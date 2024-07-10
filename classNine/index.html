@@ -7,20 +7,30 @@
     <link rel="stylesheet" href="./css/input.css" />
 </head>
 <body class="bg-gray-300">
-    <div class="w-full font-bold first-letter:text-4xl first-letter:text-red-500 dark:hover:bg-yellow-500 dark:md:hover:bg-green-600 dark:lg:hover:bg-indigo-700">
+    <div class="w-full font-bold first-letter:text-4xl first-letter:text-red-500 dark:hover:bg-yellow-500 dark:md:hover:bg-green-600 dark:lg:hover:bg-indigo-700 print:hidden">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia maiores beatae ex magni id animi at quidem. Quis, assumenda, ullam sunt adipisci voluptatum deserunt vitae suscipit ab doloribus distinctio dolore.
     </div>
-    <label for="" class="after:content-['*'] after:ml-1 after:text-red-700">Email</label>
+    <label for="" class="after:content-['*'] after:ml-1 after:text-red-700 print:hidden">Email</label>
 
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-4xl mx-auto print:hidden">
         <div class="flex justify-center space-x-4">
-            <button class="bg-cyan-400 text-white py-1 px-3 rounded-full shadow-lg shadow-cyan-400/50 transform duration-300 hover:text-cyan-400 hover:bg-white hover:border ">check shadow</button>
+            <button class="bg-cyan-400 text-white py-1 px-3 rounded-lg shadow-lg shadow-cyan-400/50 transform duration-300 hover:text-cyan-400 hover:bg-white hover:border ">check shadow</button>
 
             <button class="bg-blue-400 text-white py-1 px-3 rounded-full shadow-xl shadow-blue-400 transform duration-300  hover:shadow-md hover:text-blue-400 hover:bg-white hover:border ">check shadow</button>
 
             <button class="bg-red-400 text-white py-1 px-3 rounded-full shadow-lg shadow-blue-400/50 transform duration-300 hover:text-blue-400 hover:bg-white hover:border ">check shadow</button>
             
         </div>
+    </div>
+
+<!-- print layout design  -->
+    <div class="p-4">
+        <h2 class="text-2xl print:text-indigo-700 print:font-bold">Let's print this page</h2>
+        <p class="text-slate-600 print:text-black print:text-justify"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit incidunt facere nihil illum quos. Et incidunt nihil quo repellat reiciendis consequuntur eaque, error a dolorum perferendis pariatur, rerum vel voluptatem.</p>
+
+        <p class="text-slate-600 print:text-black print:text-justify"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit incidunt facere nihil illum quos. Et incidunt nihil quo repellat reiciendis consequuntur eaque, error a dolorum perferendis pariatur, rerum vel voluptatem.</p>
+
+        <p class="mt-2 text-right print:hidden"><button onclick="window.print()" class="text-white bg-blue-600 py-1 px-2 rounded-md">Print Now</button> </p>
     </div>
 
 
